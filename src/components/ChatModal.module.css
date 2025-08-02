@@ -1,0 +1,41 @@
+.chatScrollArea {
+  height: 100%;
+  overflow: hidden;
+}
+
+.chatScrollArea [data-radix-scroll-area-viewport] {
+  height: 100% !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+}
+
+.chatScrollArea [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatScrollArea [data-radix-scroll-area-viewport]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatScrollArea [data-radix-scroll-area-viewport]::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+
+.chatScrollArea [data-radix-scroll-area-viewport]::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+.messageContainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.messagesWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100%;
+}
